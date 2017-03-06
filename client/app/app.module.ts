@@ -1,5 +1,6 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import {routing, appRoutingProviders} from './app.routing';
 import { AppComponent }  from './app.component';
 import {AUTH_PROVIDERS} from 'angular2-jwt';
@@ -23,3 +24,17 @@ import {AuthGuard} from './auth.guard';
 })
 
 export class AppModule { }
+
+import {AppComponent} from './app.component';
+import {HttpModule} from '@angular/http';
+import {FormsModule} from '@angular/forms';
+
+ // import {TasksComponent} from './components/tasks/tasks.component';
+
+@NgModule({
+  imports:  [BrowserModule,HttpModule,FormsModule],
+  declarations: [AppComponent],
+   bootstrap: [AppComponent]
+})
+export class AppModule {}
+

@@ -30,3 +30,8 @@ bower_components/
 client/**/*.js
 client/**/*.map
 
+
+app/**/*.js/
+app/**/*.map/
+jspm_packages/
+
